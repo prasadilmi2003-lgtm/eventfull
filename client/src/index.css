@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* ---- EventEase design tokens ----
+   Tailwind v4 turns every --color-* below into utilities: bg-brand-600, text-navy-900, bg-pink, ... */
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand: violet */
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-500: #8b5cf6;
+  --color-brand-600: #7c3aed;
+  --color-brand-700: #6d28d9;
+
+  /* Dark navy for text, hero and footer */
+  --color-navy-700: #1e2a52;
+  --color-navy-800: #141d3d;
+  --color-navy-900: #0b1230;
+
+  /* Colourful accents (used for category tiles, badges, highlights) */
+  --color-pink: #ec4899;
+  --color-orange: #f97316;
+  --color-amber: #fbbf24;
+  --color-teal: #14b8a6;
+  --color-sky: #0ea5e9;
+  --color-lime: #84cc16;
+
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 3px rgb(11 18 48 / 0.06), 0 8px 24px rgb(11 18 48 / 0.06);
+}
+
+@layer base {
+  body { @apply bg-slate-50 text-navy-900 font-sans antialiased; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-brand-600; }
+}
