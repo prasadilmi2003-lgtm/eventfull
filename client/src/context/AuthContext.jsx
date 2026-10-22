@@ -11,21 +11,23 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     api.get('/auth/me')
-      .then((r) => setUser(r.data))
+      .then((r) => setUser(r.data?.user || r.data))
       .catch(() => setUser(null))
       .finally(() => setLoading(false))
   }, [])
 
   const login = useCallback(async (credentials) => {
     const { data } = await api.post('/auth/login', credentials)
-    setUser(data)
-    return data
+    const u = data?.user || data
+    setUser(u)
+    return u
   }, [])
 
   const register = useCallback(async (details) => {
     const { data } = await api.post('/auth/register', details)
-    setUser(data)
-    return data
+    const u = data?.user || data
+    setUser(u)
+    return u
   }, [])
 
   const logout = useCallback(async () => {

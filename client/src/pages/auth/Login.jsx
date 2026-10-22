@@ -55,10 +55,10 @@ export default function Login() {
       </form>
       <p className="mt-6 text-center text-sm text-slate-600">New here? <Link to="/signup" className="font-semibold text-brand-600 hover:underline">Create an account</Link></p>
 
-      {import.meta.env.VITE_USE_MOCK !== 'false' && (
+      {import.meta.env.DEV && (
         <div className="mt-6 rounded-xl bg-brand-50 p-4 text-sm">
-          <p className="font-semibold">Demo accounts (mock mode)</p>
-          <p className="text-xs text-slate-500">Click one to fill the form. Password: Demo@1234</p>
+          <p className="font-semibold text-brand-900">Demo accounts (Quick login)</p>
+          <p className="text-xs text-slate-500">Click to autofill. Password: Demo@1234</p>
           <div className="mt-2 flex flex-wrap gap-2">
             {demo.map(([label, mail]) => (
               <Button key={mail} size="sm" variant="outline" onClick={() => setForm({ email: mail, password: 'Demo@1234' })}>{label}</Button>

@@ -50,20 +50,35 @@ const userSchema = new mongoose.Schema(
       default: false,
     },
 
-    favorites: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Event',
-      },
-    ],
+    favorites: {
+      type: [String],
+      default: [],
+    },
+
+    resetPasswordToken: {
+      type: String,
+      select: false,
+    },
+
+    resetPasswordExpires: {
+      type: Date,
+      select: false,
+    },
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+      transform: (doc, ret) => {
+        delete ret.passwordHash
+        delete ret.resetPasswordToken
+        delete ret.resetPasswordExpires
+        delete ret.__v
+        return ret
+      },
+    },
   },
 )
-
-// Create a unique database index for email addresses.
-userSchema.index({ email: 1 }, { unique: true })
 
 const User = mongoose.model('User', userSchema)
 

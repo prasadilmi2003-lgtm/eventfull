@@ -57,3 +57,19 @@ export const authorize = (...allowedRoles) => {
     next()
   }
 }
+
+export const optionalAuth = async (req, res, next) => {
+  try {
+    const token = req.cookies?.eventease_token
+    if (!token) return next()
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET)
+    const user = await User.findById(decoded.sub)
+    if (user && user.accountStatus === 'active') {
+      req.user = user
+    }
+    next()
+  } catch {
+    next()
+  }
+}
