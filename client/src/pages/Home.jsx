@@ -23,10 +23,10 @@ function Section({ title, link, children }) {
 }
 
 const perks = [
-  { icon: Sparkles, label: 'Free & paid events', tone: 'bg-brand-100 text-brand-600' },
-  { icon: Ticket, label: 'Instant QR tickets', tone: 'bg-pink/15 text-pink' },
-  { icon: Heart, label: 'Save your favourites', tone: 'bg-orange/15 text-orange' },
-  { icon: ShieldCheck, label: 'Secure booking', tone: 'bg-teal/15 text-teal' },
+  { icon: Sparkles, label: 'Free & paid events', tone: 'text-brand-600' },
+  { icon: Ticket, label: 'Instant QR tickets', tone: 'text-pink' },
+  { icon: Heart, label: 'Save your favourites', tone: 'text-orange' },
+  { icon: ShieldCheck, label: 'Secure booking', tone: 'text-teal' },
 ]
 const grid = 'grid gap-6 sm:grid-cols-2 lg:grid-cols-4'
 
@@ -46,25 +46,39 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero: photo on the right, soft white fade on the left so the text stays readable */}
-      <div className="relative isolate overflow-hidden">
-        <img src={photo(ids.hero, 1600)} alt="" className="absolute inset-0 -z-20 h-full w-full object-cover" />
-        <div className="absolute inset-0 -z-10 bg-white/85 lg:bg-gradient-to-r lg:from-white lg:via-white/85 lg:to-white/0" />
-        <div className="mx-auto max-w-7xl px-4 pb-14 pt-16 sm:pt-24">
-          <p className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-600 shadow-card"><Sparkles size={14} /> Live your moments</p>
-          <h1 className="mt-5 max-w-2xl text-5xl font-extrabold leading-[1.05] sm:text-6xl">
-            Discover Events.<br /><span className="bg-gradient-to-r from-brand-600 via-pink to-orange bg-clip-text text-transparent">Create Memories.</span>
-          </h1>
-          <p className="mt-5 max-w-lg text-lg text-slate-600">Find the best events around you: concerts, workshops, meetups and food festivals.</p>
-          <div className="mt-8 max-w-5xl"><SearchBar /></div>
-          <ul className="mt-6 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
-            {perks.map(({ icon: Icon, label, tone }) => (
-              <li key={label} className="glass flex items-center gap-3 rounded-2xl p-3">
-                <span className={`rounded-xl p-2 ${tone}`}><Icon size={18} /></span>
-                <span className="text-xs font-semibold leading-tight">{label}</span>
-              </li>
-            ))}
-          </ul>
+      {/* Hero: vivid concert photo under a violet-to-pink glow, with a collage of event photos on large screens */}
+      <div className="relative isolate overflow-hidden bg-navy-900 text-white">
+        <img src={photo(ids.hero, 1920)} alt="" className="absolute inset-0 -z-30 h-full w-full object-cover" />
+        <div className="absolute inset-0 -z-20 bg-gradient-to-r from-navy-900/95 via-brand-700/80 to-pink/50" />
+        <div className="absolute -left-24 top-10 -z-10 h-80 w-80 rounded-full bg-pink/40 blur-3xl" />
+        <div className="absolute bottom-0 right-1/3 -z-10 h-72 w-72 rounded-full bg-orange/30 blur-3xl" />
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-14 pt-16 sm:pt-24 lg:grid-cols-[1.35fr_1fr]">
+          <div>
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider backdrop-blur"><Sparkles size={14} className="text-amber" /> Live your moments</p>
+            <h1 className="mt-5 text-5xl font-extrabold leading-[1.05] sm:text-6xl">
+              Discover Events.<br /><span className="bg-gradient-to-r from-amber via-pink to-brand-200 bg-clip-text text-transparent">Create Memories.</span>
+            </h1>
+            <p className="mt-5 max-w-lg text-lg text-white/85">Find the best events around you: concerts, workshops, meetups and food festivals.</p>
+            <div className="mt-8"><SearchBar /></div>
+            <ul className="mt-6 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
+              {perks.map(({ icon: Icon, label, tone }) => (
+                <li key={label} className="flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 p-3 backdrop-blur">
+                  <span className={`rounded-xl bg-white p-2 ${tone}`}><Icon size={18} /></span>
+                  <span className="text-xs font-semibold leading-tight">{label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="relative hidden h-[30rem] lg:block" aria-hidden="true">
+            <img src={photo(ids.concert, 700)} alt="" className="absolute right-0 top-0 h-56 w-72 rotate-3 rounded-3xl object-cover shadow-2xl ring-4 ring-white/30" />
+            <img src={photo(ids.streetFood, 700)} alt="" className="absolute left-0 top-36 h-52 w-64 -rotate-6 rounded-3xl object-cover shadow-2xl ring-4 ring-white/30" />
+            <img src={photo(ids.coding, 700)} alt="" className="absolute bottom-0 right-6 h-48 w-64 rotate-2 rounded-3xl object-cover shadow-2xl ring-4 ring-white/30" />
+            <div className="absolute bottom-16 left-2 flex items-center gap-3 rounded-2xl bg-white p-3 pr-5 text-navy-900 shadow-2xl">
+              <span className="rounded-xl bg-brand-600 p-2 text-white"><Ticket size={18} /></span>
+              <span><span className="block text-xs text-slate-500">Your ticket</span><span className="block text-sm font-bold">Instant QR code</span></span>
+            </div>
+          </div>
         </div>
       </div>
 

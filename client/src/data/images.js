@@ -13,7 +13,7 @@ export const ids = {
   education: '1524178232363-1fb2b075b655',
   charity: '1559027615-cd4628902d4a',
   // page photos
-  hero: '1514525253161-7a46d19cd819',
+  hero: '1533174072545-7a4b6ad7a6c3',
   organizer: '1556761175-5973dc0f32e7',
   auth: '1492684223066-81342ee5ff30',
   // sample events
