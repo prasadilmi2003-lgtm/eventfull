@@ -12,6 +12,7 @@ import adminRoutes from './routes/adminRoutes.js'
 import contactRoutes from './routes/contactRoutes.js'
 import reviewRoutes from './routes/reviewRoutes.js'
 import notificationRoutes from './routes/notificationRoutes.js'
+import chatRoutes from './routes/chatRoutes.js'
 import { errorHandler } from './middleware/errorHandler.js'
 
 const app = express()
@@ -27,8 +28,11 @@ app.use(
 const allowedOrigins = [
   process.env.CLIENT_URL || 'http://localhost:5173',
   'http://localhost:5173',
+  'http://localhost:5180',
+  'http://localhost:5174',
   'http://localhost:3000',
   'http://127.0.0.1:5173',
+  'http://127.0.0.1:5180',
 ]
 
 app.use(
@@ -38,7 +42,9 @@ app.use(
       if (!origin || allowedOrigins.includes(origin)) {
         return callback(null, true)
       }
-      return callback(null, true) // permissive for local development
+      // Permissive for local development only; production accepts just CLIENT_URL (and the list above).
+      if (process.env.NODE_ENV !== 'production') return callback(null, true)
+      return callback(new Error('Not allowed by CORS'))
     },
     credentials: true,
   }),
@@ -69,6 +75,7 @@ app.use('/api/admin', adminRoutes)
 app.use('/api/contact', contactRoutes)
 app.use('/api/reviews', reviewRoutes)
 app.use('/api/notifications', notificationRoutes)
+app.use('/api/chat', chatRoutes)
 
 // 404 handler for unknown routes
 app.use((req, res) => {

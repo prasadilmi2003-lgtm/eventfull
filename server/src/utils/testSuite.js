@@ -286,6 +286,24 @@ async function runTests() {
     assert(cancelRes.status === 200, 'POST /events/:id/cancel cancels event with HTTP 200')
     assert(cancelData.status === 'cancelled', 'Cancelled event has status cancelled')
 
+    // 12. AI Chatbot API
+    console.log('\n[12] Testing AI Chatbot Endpoint...')
+    const chatEmpty = await fetch(`${BASE_URL}/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: '' }),
+    })
+    assert(chatEmpty.status === 400, 'Empty chat message returns HTTP 400')
+
+    const chatValid = await fetch(`${BASE_URL}/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: 'Hello! What can you help me with on EventEase?' }),
+    })
+    const chatData = await chatValid.json()
+    assert(chatValid.status === 200, 'Valid chat message returns HTTP 200')
+    assert(typeof chatData.reply === 'string' && chatData.reply.length > 0, 'Chatbot returns non-empty reply string')
+
     console.log('\n=============================================')
     console.log(`  Test Suite Completed: ${passed} Passed, ${failed} Failed`)
     console.log('=============================================\n')

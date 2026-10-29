@@ -1,5 +1,5 @@
 // MOCK DATABASE (development only). Lives in the browser's localStorage so the frontend works
-// without a backend. Set VITE_USE_MOCK=false to talk to the real Express API instead.
+// without a backend. Used only when VITE_USE_MOCK=true; otherwise the real Express API is called.
 import { ids, photo } from '../data/images'
 
 // Seed passwords are plain text on purpose: this is fake data, the real backend must hash them.

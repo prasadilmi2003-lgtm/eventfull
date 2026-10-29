@@ -5,5 +5,8 @@ import { defineConfig } from 'vite'
 // The dev proxy lets the browser call /api/... on the Vite port, so cookies work without CORS pain.
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  server: { proxy: { '/api': 'http://localhost:5000' } },
+  server: {
+    port: 5180,
+    proxy: { '/api': 'http://localhost:5000' },
+  },
 })

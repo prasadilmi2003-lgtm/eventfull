@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import DashboardLayout from './components/layout/DashboardLayout'
 import Layout from './components/layout/Layout'
 import ProtectedRoute from './components/ProtectedRoute'
+import Chatbot from './components/Chatbot'
 import About from './pages/About'
 import Categories from './pages/Categories'
 import Contact from './pages/Contact'
@@ -31,52 +32,55 @@ import OrganizerDashboard from './pages/organizer/OrganizerDashboard'
 
 export default function App() {
   return (
-    <Routes>
-      {/* Public pages */}
-      <Route element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="events" element={<Explore />} />
-        <Route path="events/:id" element={<EventDetails />} />
-        <Route path="categories" element={<Categories />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
-        <Route path="forgot-password" element={<ForgotPassword />} />
-        <Route path="reset-password" element={<ResetPassword />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
+    <>
+      <Routes>
+        {/* Public pages */}
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="events" element={<Explore />} />
+          <Route path="events/:id" element={<EventDetails />} />
+          <Route path="categories" element={<Categories />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="forgot-password" element={<ForgotPassword />} />
+          <Route path="reset-password" element={<ResetPassword />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
 
-      {/* Logged-in pages: sidebar layout, then a role check per group */}
-      <Route element={<ProtectedRoute />}>
-        <Route element={<DashboardLayout />}>
-          <Route path="profile" element={<Profile />} />
+        {/* Logged-in pages: sidebar layout, then a role check per group */}
+        <Route element={<ProtectedRoute />}>
+          <Route element={<DashboardLayout />}>
+            <Route path="profile" element={<Profile />} />
 
-          <Route element={<ProtectedRoute roles={['attendee']} />}>
-            <Route path="attendee" element={<AttendeeDashboard />} />
-            <Route path="attendee/tickets" element={<MyTickets />} />
-            <Route path="attendee/bookings/:id" element={<BookingDetails />} />
-            <Route path="attendee/saved" element={<SavedEvents />} />
-          </Route>
+            <Route element={<ProtectedRoute roles={['attendee']} />}>
+              <Route path="attendee" element={<AttendeeDashboard />} />
+              <Route path="attendee/tickets" element={<MyTickets />} />
+              <Route path="attendee/bookings/:id" element={<BookingDetails />} />
+              <Route path="attendee/saved" element={<SavedEvents />} />
+            </Route>
 
-          <Route element={<ProtectedRoute roles={['organizer']} />}>
-            <Route path="organizer" element={<OrganizerDashboard />} />
-            <Route path="organizer/events" element={<ManageEvents />} />
-            <Route path="organizer/events/new" element={<EventForm />} />
-            <Route path="organizer/events/:id/edit" element={<EventForm />} />
-            <Route path="organizer/events/:id/attendees" element={<EventAttendees />} />
-            <Route path="organizer/events/:id/analytics" element={<EventAnalytics />} />
-            <Route path="organizer/checkin" element={<CheckIn />} />
-          </Route>
+            <Route element={<ProtectedRoute roles={['organizer']} />}>
+              <Route path="organizer" element={<OrganizerDashboard />} />
+              <Route path="organizer/events" element={<ManageEvents />} />
+              <Route path="organizer/events/new" element={<EventForm />} />
+              <Route path="organizer/events/:id/edit" element={<EventForm />} />
+              <Route path="organizer/events/:id/attendees" element={<EventAttendees />} />
+              <Route path="organizer/events/:id/analytics" element={<EventAnalytics />} />
+              <Route path="organizer/checkin" element={<CheckIn />} />
+            </Route>
 
-          <Route element={<ProtectedRoute roles={['admin']} />}>
-            <Route path="admin" element={<AdminDashboard />} />
-            <Route path="admin/users" element={<AdminUsers />} />
-            <Route path="admin/events" element={<AdminEvents />} />
-            <Route path="admin/reports" element={<AdminReports />} />
+            <Route element={<ProtectedRoute roles={['admin']} />}>
+              <Route path="admin" element={<AdminDashboard />} />
+              <Route path="admin/users" element={<AdminUsers />} />
+              <Route path="admin/events" element={<AdminEvents />} />
+              <Route path="admin/reports" element={<AdminReports />} />
+            </Route>
           </Route>
         </Route>
-      </Route>
-    </Routes>
+      </Routes>
+      <Chatbot />
+    </>
   )
 }

@@ -7,8 +7,8 @@ const api = axios.create({
   withCredentials: true,
 })
 
-// Mock mode is ON unless VITE_USE_MOCK=false. The adapter answers requests locally instead of the network.
-if (import.meta.env.VITE_USE_MOCK !== 'false') api.defaults.adapter = mockAdapter
+// The mock API is opt-in (VITE_USE_MOCK=true) so a production build can never ship it by accident.
+if (import.meta.env.VITE_USE_MOCK === 'true') api.defaults.adapter = mockAdapter
 
 export const errorMessage = (err) => err.response?.data?.message || err.message || 'Something went wrong'
 // Field-level errors from the server: { errors: { email: 'Already registered' } }
