@@ -128,7 +128,7 @@ function seed() {
     db.users.push(u)
     return u
   }
-  user('Platform Admin', 'admin@demo.com', 'admin')
+  user('Platform Admin', 'admin@eventease.com', 'admin', { password: 'Admin@Mock2026' })
   const org1 = user('Pulse Events', 'organizer@demo.com', 'organizer')
   const org2 = user('DevLanka', 'organizer2@demo.com', 'organizer')
   const att = user('Demo Attendee', 'attendee@demo.com', 'attendee')

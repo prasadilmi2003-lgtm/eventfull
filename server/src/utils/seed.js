@@ -53,11 +53,19 @@ export const seedDatabase = async () => {
   const demoPasswordHash = await bcrypt.hash('Demo@1234', 12)
   const testPasswordHash = await bcrypt.hash('EventEase123', 12)
 
+  // The admin login comes from server/.env (ADMIN_EMAIL / ADMIN_PASSWORD), never from the source code
+  const adminEmail = (process.env.ADMIN_EMAIL || '').trim().toLowerCase()
+  const adminPassword = process.env.ADMIN_PASSWORD || ''
+  if (!adminEmail || adminPassword.length < 8) {
+    throw new Error('Set ADMIN_EMAIL and ADMIN_PASSWORD (8+ characters) in server/.env before seeding.')
+  }
+  const adminPasswordHash = await bcrypt.hash(adminPassword, 12)
+
   // Create Users
   const admin = await User.create({
     name: 'Platform Admin',
-    email: 'admin@demo.com',
-    passwordHash: demoPasswordHash,
+    email: adminEmail,
+    passwordHash: adminPasswordHash,
     role: 'admin',
     accountStatus: 'active',
     emailVerified: true,

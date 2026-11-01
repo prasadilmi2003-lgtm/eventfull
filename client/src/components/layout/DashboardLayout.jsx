@@ -1,6 +1,7 @@
 import { BarChart3, CalendarDays, Heart, LayoutDashboard, LogOut, ScanLine, ShieldCheck, Ticket, User, Users } from 'lucide-react'
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
+import { ids, photo } from '../../data/images'
 import Badge from '../ui/Badge'
 import Button from '../ui/Button'
 
@@ -26,10 +27,18 @@ const nav = {
   ],
 }
 
+// Themed wallpaper behind each role's dashboard: a blurred photo under a light tint, so cards and text stay readable.
+const wallpaper = {
+  attendee: { photo: ids.auth, tint: 'bg-gradient-to-br from-brand-100/75 via-white/60 to-pink/30' },
+  organizer: { photo: ids.concert, tint: 'bg-gradient-to-br from-orange/25 via-white/65 to-brand-200/70' },
+  admin: { photo: ids.business, tint: 'bg-gradient-to-br from-sky/30 via-white/65 to-navy-700/25' },
+}
+
 // Shared shell for every logged-in page: top bar + role-specific sidebar (a scrolling tab row on phones).
 export default function DashboardLayout() {
   const { user, logout } = useAuth()
   const navigate = useNavigate()
+  const theme = wallpaper[user.role]
 
   const handleLogout = async () => {
     await logout()
@@ -37,7 +46,11 @@ export default function DashboardLayout() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="relative isolate min-h-screen">
+      <div className="pointer-events-none fixed inset-0 -z-10 print:hidden" aria-hidden="true">
+        <img src={photo(theme.photo, 1600)} alt="" onError={(e) => (e.currentTarget.style.display = 'none')} className="h-full w-full scale-105 object-cover blur-[3px]" />
+        <div className={`absolute inset-0 ${theme.tint}`} />
+      </div>
       <header className="glass sticky top-0 z-40 border-x-0 border-t-0">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3">
           <Link to="/" className="flex items-center gap-2 text-xl font-extrabold">

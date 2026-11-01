@@ -42,6 +42,17 @@ Eventfull/
 
 ---
 
+## 🗄️ Database Design (ERD)
+
+MongoDB database `eventease` with 7 collections (users, events, bookings, tickets, reviews, notifications, contactmessages).
+Ticket types are embedded in events and booking items are embedded in bookings.
+
+![EventEase ERD](docs/erd.svg)
+
+Full diagram, relationship table, keys, indexes and design decisions: [docs/erd.md](docs/erd.md)
+
+---
+
 ## ⚡ Quickstart Guide (PowerShell)
 
 ### 1. Backend Setup & Seeding
@@ -75,7 +86,7 @@ The database comes pre-seeded with accounts for all roles (Password: `Demo@1234`
 | **Attendee** | `attendee@demo.com` | Browse events, book tickets, view QR tickets, save favorites, cancel bookings |
 | **Organizer** | `organizer@demo.com` | Create/edit events, track sales, QR ticket check-in, attendee list, analytics |
 | **Organizer 2** | `organizer2@demo.com` | Manage tech bootcamp events |
-| **Administrator** | `admin@demo.com` | Platform overview, event moderation (approve/reject/unpublish), user suspend/reactivate, sales reports |
+| **Administrator** | set in `server/.env` (`ADMIN_EMAIL` / `ADMIN_PASSWORD`, applied by `npm run seed` or `npm run set-admin`) | Platform overview, event moderation (approve/reject/unpublish), user suspend/reactivate, sales reports |
 
 *(You can also register a new account on the Signup page or click the quick-login buttons on the Login page).*
 

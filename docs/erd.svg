@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1710" height="1080" viewBox="0 0 1710 1080" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+<rect width="1710" height="1080" fill="#ffffff"/>
+<text x="40" y="52" font-size="30" font-weight="700" fill="#0B1230">EventEase: Entity Relationship Diagram</text>
+<text x="40" y="84" font-size="17" fill="#475569">MongoDB database "eventease". Key fields are shown; the full field list is in the report and docs/erd.md.</text>
+<polyline points="480,220 340,220" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="456" y="211" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="364" y="241" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="630,424 630,520" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="615" y="454" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="645" y="502" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="780,200 920,200" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="804" y="221" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="896" y="191" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="720,130 720,108 1520,108 1520,130" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="735" y="112" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="1535" y="112" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="480,340 420,340 420,610 340,610" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="456" y="331" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="364" y="631" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="480,700 340,700" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="456" y="691" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="364" y="721" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="780,560 850,560 850,300 920,300" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="804" y="581" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="896" y="291" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="780,840 920,840" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-dasharray="9 7" stroke-linejoin="round"/>
+<text x="804" y="861" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="896" y="831" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="1070,424 1070,480" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-dasharray="9 7" stroke-linejoin="round"/>
+<text x="1055" y="454" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="1085" y="462" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="1070,740 1070,672" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="1085" y="722" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="1055" y="702" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="700,916 700,1020 1625,1020 1625,492" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="685" y="946" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="1610" y="522" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="1220,250 1360,250" fill="none" stroke="#7C3AED" stroke-width="2.6" stroke-linejoin="round"/>
+<text x="1244" y="271" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="1336" y="241" text-anchor="middle" font-size="19" font-weight="700" fill="#6D28D9" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<text x="410" y="208" text-anchor="middle" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">receives</text>
+<text x="642" y="482" text-anchor="start" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">organizes</text>
+<text x="850" y="190" text-anchor="middle" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">makes</text>
+<text x="1120" y="98" text-anchor="middle" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">owns</text>
+<text x="428" y="482" text-anchor="start" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">writes</text>
+<text x="410" y="690" text-anchor="middle" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">reviewed</text>
+<text x="843" y="470" text-anchor="end" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">booked in</text>
+<text x="1062" y="728" text-anchor="end" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">snapshot of</text>
+<text x="1290" y="238" text-anchor="middle" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">issues</text>
+<text x="1180" y="1008" text-anchor="middle" font-size="16" font-style="italic" fill="#334155" stroke="#fff" stroke-width="5" paint-order="stroke" stroke-linejoin="round">admits</text>
+<rect x="40" y="130" width="300" height="260" rx="10" fill="#fff" stroke="#6D28D9" stroke-width="2.5"/>
+<path d="M40,176 V140 a10,10 0 0 1 10,-10 H330 a10,10 0 0 1 10,10 V176 Z" fill="#6D28D9"/>
+<text x="190.0" y="160" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">NOTIFICATION</text>
+<rect x="41.5" y="176" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="199" font-size="19" font-weight="700" fill="#0B1230">_id</text>
+<rect x="284" y="183" width="42" height="21" rx="10" fill="#6D28D9"/>
+<text x="305" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">PK</text>
+<text x="56" y="233" font-size="19" font-weight="400" fill="#0B1230">userId</text>
+<rect x="284" y="217" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="305" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<rect x="41.5" y="244" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="267" font-size="19" font-weight="400" fill="#0B1230">title</text>
+<text x="56" y="301" font-size="19" font-weight="400" fill="#0B1230">message</text>
+<rect x="41.5" y="312" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="335" font-size="19" font-weight="400" fill="#0B1230">type</text>
+<text x="56" y="369" font-size="19" font-weight="400" fill="#0B1230">read</text>
+<rect x="40" y="520" width="300" height="226" rx="10" fill="#fff" stroke="#6D28D9" stroke-width="2.5"/>
+<path d="M40,566 V530 a10,10 0 0 1 10,-10 H330 a10,10 0 0 1 10,10 V566 Z" fill="#6D28D9"/>
+<text x="190.0" y="550" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">REVIEW</text>
+<rect x="41.5" y="566" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="589" font-size="19" font-weight="700" fill="#0B1230">_id</text>
+<rect x="284" y="573" width="42" height="21" rx="10" fill="#6D28D9"/>
+<text x="305" y="588" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">PK</text>
+<text x="56" y="623" font-size="19" font-weight="400" fill="#0B1230">eventId</text>
+<rect x="284" y="607" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="305" y="622" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<rect x="41.5" y="634" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="657" font-size="19" font-weight="400" fill="#0B1230">userId</text>
+<rect x="284" y="641" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="305" y="656" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<text x="56" y="691" font-size="19" font-weight="400" fill="#0B1230">rating</text>
+<rect x="41.5" y="702" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="725" font-size="19" font-weight="400" fill="#0B1230">comment</text>
+<rect x="40" y="800" width="300" height="226" rx="10" fill="#fff" stroke="#475569" stroke-width="2.5"/>
+<path d="M40,846 V810 a10,10 0 0 1 10,-10 H330 a10,10 0 0 1 10,10 V846 Z" fill="#475569"/>
+<text x="190.0" y="830" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">CONTACT_MESSAGE</text>
+<rect x="41.5" y="846" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="869" font-size="19" font-weight="700" fill="#0B1230">_id</text>
+<rect x="284" y="853" width="42" height="21" rx="10" fill="#6D28D9"/>
+<text x="305" y="868" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">PK</text>
+<text x="56" y="903" font-size="19" font-weight="400" fill="#0B1230">name</text>
+<rect x="41.5" y="914" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="937" font-size="19" font-weight="400" fill="#0B1230">email</text>
+<text x="56" y="971" font-size="19" font-weight="400" fill="#0B1230">message</text>
+<rect x="41.5" y="982" width="297" height="34" fill="#F5F3FF"/>
+<text x="56" y="1005" font-size="19" font-weight="400" fill="#0B1230">status</text>
+<rect x="480" y="130" width="300" height="294" rx="10" fill="#fff" stroke="#6D28D9" stroke-width="2.5"/>
+<path d="M480,176 V140 a10,10 0 0 1 10,-10 H770 a10,10 0 0 1 10,10 V176 Z" fill="#6D28D9"/>
+<text x="630.0" y="160" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">USER</text>
+<rect x="481.5" y="176" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="199" font-size="19" font-weight="700" fill="#0B1230">_id</text>
+<rect x="724" y="183" width="42" height="21" rx="10" fill="#6D28D9"/>
+<text x="745" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">PK</text>
+<text x="496" y="233" font-size="19" font-weight="400" fill="#0B1230">name</text>
+<rect x="481.5" y="244" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="267" font-size="19" font-weight="400" fill="#0B1230">email</text>
+<rect x="724" y="251" width="42" height="21" rx="10" fill="#EA580C"/>
+<text x="745" y="266" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">UK</text>
+<text x="496" y="301" font-size="19" font-weight="400" fill="#0B1230">passwordHash</text>
+<rect x="481.5" y="312" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="335" font-size="19" font-weight="400" fill="#0B1230">role</text>
+<text x="496" y="369" font-size="19" font-weight="400" fill="#0B1230">accountStatus</text>
+<rect x="481.5" y="380" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="403" font-size="19" font-weight="400" fill="#0B1230">favorites</text>
+<rect x="480" y="520" width="300" height="396" rx="10" fill="#fff" stroke="#6D28D9" stroke-width="2.5"/>
+<path d="M480,566 V530 a10,10 0 0 1 10,-10 H770 a10,10 0 0 1 10,10 V566 Z" fill="#6D28D9"/>
+<text x="630.0" y="550" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">EVENT</text>
+<rect x="481.5" y="566" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="589" font-size="19" font-weight="700" fill="#0B1230">_id</text>
+<rect x="724" y="573" width="42" height="21" rx="10" fill="#6D28D9"/>
+<text x="745" y="588" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">PK</text>
+<text x="496" y="623" font-size="19" font-weight="400" fill="#0B1230">organizerId</text>
+<rect x="724" y="607" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="745" y="622" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<rect x="481.5" y="634" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="657" font-size="19" font-weight="400" fill="#0B1230">title</text>
+<text x="496" y="691" font-size="19" font-weight="400" fill="#0B1230">category</text>
+<rect x="481.5" y="702" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="725" font-size="19" font-weight="400" fill="#0B1230">venue</text>
+<text x="496" y="759" font-size="19" font-weight="400" fill="#0B1230">city</text>
+<rect x="481.5" y="770" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="793" font-size="19" font-weight="400" fill="#0B1230">startDate</text>
+<text x="496" y="827" font-size="19" font-weight="400" fill="#0B1230">endDate</text>
+<rect x="481.5" y="838" width="297" height="34" fill="#F5F3FF"/>
+<text x="496" y="861" font-size="19" font-weight="400" fill="#0B1230">capacity</text>
+<text x="496" y="895" font-size="19" font-weight="400" fill="#0B1230">status</text>
+<rect x="920" y="130" width="300" height="294" rx="10" fill="#fff" stroke="#6D28D9" stroke-width="2.5"/>
+<path d="M920,176 V140 a10,10 0 0 1 10,-10 H1210 a10,10 0 0 1 10,10 V176 Z" fill="#6D28D9"/>
+<text x="1070.0" y="160" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">BOOKING</text>
+<rect x="921.5" y="176" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="199" font-size="19" font-weight="700" fill="#0B1230">_id</text>
+<rect x="1164" y="183" width="42" height="21" rx="10" fill="#6D28D9"/>
+<text x="1185" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">PK</text>
+<text x="936" y="233" font-size="19" font-weight="400" fill="#0B1230">reference</text>
+<rect x="1164" y="217" width="42" height="21" rx="10" fill="#EA580C"/>
+<text x="1185" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">UK</text>
+<rect x="921.5" y="244" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="267" font-size="19" font-weight="400" fill="#0B1230">attendeeId</text>
+<rect x="1164" y="251" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="1185" y="266" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<text x="936" y="301" font-size="19" font-weight="400" fill="#0B1230">eventId</text>
+<rect x="1164" y="285" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="1185" y="300" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<rect x="921.5" y="312" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="335" font-size="19" font-weight="400" fill="#0B1230">totalAmount</text>
+<text x="936" y="369" font-size="19" font-weight="400" fill="#0B1230">status</text>
+<rect x="921.5" y="380" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="403" font-size="19" font-weight="400" fill="#0B1230">paymentStatus</text>
+<rect x="920" y="480" width="300" height="192" rx="10" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<path d="M920,526 V490 a10,10 0 0 1 10,-10 H1210 a10,10 0 0 1 10,10 V526 Z" fill="#0F766E"/>
+<text x="1070.0" y="510" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">BOOKING_ITEM (embedded)</text>
+<rect x="921.5" y="526" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="549" font-size="19" font-weight="400" fill="#0B1230">ticketTypeId</text>
+<rect x="1164" y="533" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="1185" y="548" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<text x="936" y="583" font-size="19" font-weight="400" fill="#0B1230">name</text>
+<rect x="921.5" y="594" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="617" font-size="19" font-weight="400" fill="#0B1230">price</text>
+<text x="936" y="651" font-size="19" font-weight="400" fill="#0B1230">quantity</text>
+<rect x="920" y="740" width="300" height="226" rx="10" fill="#fff" stroke="#0F766E" stroke-width="2.5"/>
+<path d="M920,786 V750 a10,10 0 0 1 10,-10 H1210 a10,10 0 0 1 10,10 V786 Z" fill="#0F766E"/>
+<text x="1070.0" y="770" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">TICKET_TYPE (embedded)</text>
+<rect x="921.5" y="786" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="809" font-size="19" font-weight="700" fill="#0B1230">_id</text>
+<rect x="1164" y="793" width="42" height="21" rx="10" fill="#6D28D9"/>
+<text x="1185" y="808" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">PK</text>
+<text x="936" y="843" font-size="19" font-weight="400" fill="#0B1230">name</text>
+<rect x="921.5" y="854" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="877" font-size="19" font-weight="400" fill="#0B1230">price</text>
+<text x="936" y="911" font-size="19" font-weight="400" fill="#0B1230">quantity</text>
+<rect x="921.5" y="922" width="297" height="34" fill="#F5F3FF"/>
+<text x="936" y="945" font-size="19" font-weight="400" fill="#0B1230">sold</text>
+<rect x="1360" y="130" width="300" height="362" rx="10" fill="#fff" stroke="#6D28D9" stroke-width="2.5"/>
+<path d="M1360,176 V140 a10,10 0 0 1 10,-10 H1650 a10,10 0 0 1 10,10 V176 Z" fill="#6D28D9"/>
+<text x="1510.0" y="160" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">TICKET</text>
+<rect x="1361.5" y="176" width="297" height="34" fill="#F5F3FF"/>
+<text x="1376" y="199" font-size="19" font-weight="700" fill="#0B1230">_id</text>
+<rect x="1604" y="183" width="42" height="21" rx="10" fill="#6D28D9"/>
+<text x="1625" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">PK</text>
+<text x="1376" y="233" font-size="19" font-weight="400" fill="#0B1230">bookingId</text>
+<rect x="1604" y="217" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="1625" y="232" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<rect x="1361.5" y="244" width="297" height="34" fill="#F5F3FF"/>
+<text x="1376" y="267" font-size="19" font-weight="400" fill="#0B1230">attendeeId</text>
+<rect x="1604" y="251" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="1625" y="266" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<text x="1376" y="301" font-size="19" font-weight="400" fill="#0B1230">eventId</text>
+<rect x="1604" y="285" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="1625" y="300" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<rect x="1361.5" y="312" width="297" height="34" fill="#F5F3FF"/>
+<text x="1376" y="335" font-size="19" font-weight="400" fill="#0B1230">ticketTypeId</text>
+<rect x="1604" y="319" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="1625" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<text x="1376" y="369" font-size="19" font-weight="400" fill="#0B1230">code</text>
+<rect x="1604" y="353" width="42" height="21" rx="10" fill="#EA580C"/>
+<text x="1625" y="368" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">UK</text>
+<rect x="1361.5" y="380" width="297" height="34" fill="#F5F3FF"/>
+<text x="1376" y="403" font-size="19" font-weight="400" fill="#0B1230">qrToken</text>
+<rect x="1604" y="387" width="42" height="21" rx="10" fill="#EA580C"/>
+<text x="1625" y="402" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">UK</text>
+<text x="1376" y="437" font-size="19" font-weight="400" fill="#0B1230">status</text>
+<rect x="1361.5" y="448" width="297" height="34" fill="#F5F3FF"/>
+<text x="1376" y="471" font-size="19" font-weight="400" fill="#0B1230">checkedInBy</text>
+<rect x="1604" y="455" width="42" height="21" rx="10" fill="#DB2777"/>
+<text x="1625" y="470" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">FK</text>
+<rect x="1360" y="560" width="250" height="236" rx="10" fill="#fff" stroke="#CBD5E1" stroke-width="2"/>
+<text x="1376" y="590" font-size="19" font-weight="700" fill="#0B1230">Legend</text>
+<line x1="1376" y1="616" x2="1426" y2="616" stroke="#7C3AED" stroke-width="2.6"/><text x="1438" y="622" font-size="16" fill="#0B1230">Reference (foreign key)</text>
+<line x1="1376" y1="650" x2="1426" y2="650" stroke="#7C3AED" stroke-width="2.6" stroke-dasharray="9 7"/><text x="1438" y="656" font-size="16" fill="#0B1230">Embedded document</text>
+<text x="1376" y="690" font-size="16" fill="#0B1230"><tspan font-weight="700" fill="#6D28D9">1</tspan> = one, <tspan font-weight="700" fill="#6D28D9">N</tspan> = many</text>
+<rect x="1376" y="708" width="46" height="23" rx="11" fill="#6D28D9"/><text x="1399" y="725" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">PK</text>
+<rect x="1438" y="708" width="46" height="23" rx="11" fill="#DB2777"/><text x="1461" y="725" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">FK</text>
+<rect x="1500" y="708" width="46" height="23" rx="11" fill="#EA580C"/><text x="1523" y="725" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">UK</text>
+<text x="1376" y="756" font-size="14" fill="#475569">PK primary key, FK foreign key,</text>
+<text x="1376" y="776" font-size="14" fill="#475569">UK unique value</text>
+</svg>

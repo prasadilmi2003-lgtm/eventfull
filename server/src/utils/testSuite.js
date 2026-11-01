@@ -188,7 +188,7 @@ async function runTests() {
     const adminLogin = await fetch(`${BASE_URL}/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: 'admin@demo.com', password: 'Demo@1234' }),
+      body: JSON.stringify({ email: process.env.ADMIN_EMAIL, password: process.env.ADMIN_PASSWORD }),
     })
     const adminCookie = adminLogin.headers.get('set-cookie')?.split(';')[0]
 
